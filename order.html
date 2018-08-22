@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order</title>
+   <!--Importing external javascript file -->
+   <script src="javascript/orderDetail.js"></script>
+
+</head>
+<body>
+
+  <form action="order.html">
+    <p>Table No</p><input type="number" id="tableno"/><br>
+    <fieldset> <!--grouping of related items in fieldset-->
+        <legend>Order Items</legend> <!-- caption of fieldset-->
+        <div>
+            <input type="checkbox" id="burger" name="item" value="Burger"/>
+            <label for="burger">Burger</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pasta" name="item" value="Pasta" />
+            <label for="pasta">Pasta</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pizza" name="item" value="Pizza" />
+            <label for="pizza">Pizza</label>
+        </div>
+        <div>
+            <input type="checkbox" id="sandwitch" name="item" value="Sandwitch" />
+            <label for="sandwitch">Sandwitch</label>
+        </div>
+        <div>
+            <input type="checkbox" id="noodles" name="item" value="Noodles" />
+            <label for="noodles">Noodles</label>
+        </div>
+        <div>
+            <input type="checkbox" id="cheeseballs" name="item" value="Cheeseballs" />
+            <label for="cheeseballs">Cheeseballs</label>
+        </div>
+        <div>
+            <input type="checkbox" id="doughnut" name="item" value="Doughnut" />
+            <label for="doughnut">Doughnut</label>
+        </div>
+        <div>
+            <input type="checkbox" id="tea" name="item" value="Tea" />
+            <label for="tea">Tea</label>
+        </div>
+   
+        <div>
+            <input type="checkbox" id="coffee" name="item" value="Coffee" />
+            <label for="coffee">Coffee</label>
+        </div>
+        <div>
+            <input type="checkbox" id="colddrink"  name="item" value="Colddrink" />
+            <label for="colddrink">Colddrink</label>
+        </div>
+        
+    </fieldset>
+    <!-- calling the function to take order-->
+    <input type="button" onclick="takeOrderForCust();" value="Take Order"/>
+    <input type="reset"/><br> <!--button to reset the values chosen incorrectly-->
+</form>
+
+<div>
+    <span id="prepare"></span><br>
+    <span id="serve"></span>
+</div>
+
+
+
+
+   
+
+</body>
+</html>
